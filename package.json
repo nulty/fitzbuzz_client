@@ -9,6 +9,10 @@
   "author": "Iain McNulty (iainmcnulty@gmail.com)",
   "license": "ISC",
   "dependencies": {
+    "commander": "^2.9.0",
     "node-rest-client": "^1.8.0"
+  },
+  "bin": {
+    "fb_client": "./main.js"
   }
 }
