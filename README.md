@@ -67,4 +67,22 @@ $ fb_client fizzbuzzs 15
   updated_at: '2016-06-27T17:38:01Z' }
 ```
 
+## Available endpoints
+```
+fb_client users
+fb_client users <username>
 
+fb_client fizzbuzzs
+fb_client fizzbuzzs <number>
+
+fb_client favourites
+fb_client favourites <username>
+```
+
+## Submission
+
+This client only makes get requests. It would have been nice to get the posting requests complete along with authentication. I used much of the time spent on this learning node and the libraries `commander.js` and `node-rest-client`
+
+I wanted to break the endpoints out into modules or sub-commands as documented in the commander.js documentation. Some of the work I did there is available in the multiple-commands branch [here](https://github.com/nulty/fitzbuzz_client/tree/multiple-commands)
+
+For future, I would like to complete the full behaviour of the API and add authentication.
