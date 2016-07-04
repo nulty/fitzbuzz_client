@@ -14,12 +14,12 @@ var endpoint = "http://localhost:3000/api/v1/${resource}"
 
 program
   .arguments('<resource> [id/username]')
-  .option('-p, --page <page #>', 'The page of the response')
+  .option('-p, --page <page #>', 'The page of the response (0 >)')
   .option('-n, --perpage <# records>', 'The number of records per page')
   .action(function(resource, id) {
 
     if (!program.page) {
-      page = 0
+      page = 1
     } else {
       page = program.page
     }
